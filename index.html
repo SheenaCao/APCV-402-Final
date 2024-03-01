@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lights Out Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Lights Out</h1>
+    <div id="gameInfo">
+        <p>Steps: <span id="steps">0</span></p>
+        <p>Time: <span id="time">0</span> seconds</p>
+        <button id="difficulty">Difficulty: Easy</button>
+        <button id="restartButton">Restart</button>
+        <button id="rulesButton">Game Rules 📘</button>
+    </div>
+    <div id="gameBoard"></div>
+    <div id="rulesModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Game Rules</h2>
+            <p>Clicking any light bulb toggles its state and that of its adjacent bulbs. The aim is to switch off all the lights.</p>
+            <h2>Game Logic</h2>
+            <p>This classic logic game challenges players to devise strategies and predict outcomes, turning off lights in as few moves as possible.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    <script src="script.js"></script>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>
+
